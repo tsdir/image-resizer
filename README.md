@@ -10,3 +10,13 @@ Creates image thumbnails from your S3 bucket on-the-fly using AWS Lambda & API G
    2. Create **node_modules.zip**: the node_modules layer.
    3. Deploy **Archive.zip** to the Lambda function.
 3. Ensure the lambda layer using node_modules.zip is manually updated.
+
+# Example Event
+
+```json
+{
+  "queryStringParameters": {
+    "key": "000313f6-02f5-433f-8557-adc0bd2f6792.jpg:360w"
+  }
+}
+```
